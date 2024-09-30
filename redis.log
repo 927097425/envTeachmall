@@ -1,0 +1,145 @@
+11718:C 15 Aug 2024 12:38:14.792 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+11718:C 15 Aug 2024 12:38:14.792 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=11718, just started
+11718:C 15 Aug 2024 12:38:14.792 # Configuration loaded
+11718:M 15 Aug 2024 12:38:14.794 * monotonic clock: POSIX clock_gettime
+11718:M 15 Aug 2024 12:38:14.794 * Running mode=standalone, port=6379.
+11718:M 15 Aug 2024 12:38:14.794 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+11718:M 15 Aug 2024 12:38:14.794 # Server initialized
+11718:M 15 Aug 2024 12:38:14.794 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+11718:M 15 Aug 2024 12:38:14.795 * Loading RDB produced by version 6.2.6
+11718:M 15 Aug 2024 12:38:14.795 * RDB age 111 seconds
+11718:M 15 Aug 2024 12:38:14.795 * RDB memory usage when created 0.77 Mb
+11718:M 15 Aug 2024 12:38:14.795 # Done loading RDB, keys loaded: 0, keys expired: 0.
+11718:M 15 Aug 2024 12:38:14.795 * DB loaded from disk: 0.000 seconds
+11718:M 15 Aug 2024 12:38:14.795 * Ready to accept connections
+11718:M 15 Aug 2024 13:38:15.027 * 1 changes in 3600 seconds. Saving...
+11718:M 15 Aug 2024 13:38:15.027 * Background saving started by pid 14606
+14606:C 15 Aug 2024 13:38:15.030 * DB saved on disk
+14606:C 15 Aug 2024 13:38:15.031 * RDB: 0 MB of memory used by copy-on-write
+11718:M 15 Aug 2024 13:38:15.128 * Background saving terminated with success
+11718:M 15 Aug 2024 16:14:56.462 * 1 changes in 3600 seconds. Saving...
+11718:M 15 Aug 2024 16:14:56.462 * Background saving started by pid 21744
+21744:C 15 Aug 2024 16:14:56.466 * DB saved on disk
+21744:C 15 Aug 2024 16:14:56.466 * RDB: 0 MB of memory used by copy-on-write
+11718:M 15 Aug 2024 16:14:56.563 * Background saving terminated with success
+11718:M 15 Aug 2024 17:14:57.060 * 1 changes in 3600 seconds. Saving...
+11718:M 15 Aug 2024 17:14:57.061 * Background saving started by pid 24530
+24530:C 15 Aug 2024 17:14:57.064 * DB saved on disk
+24530:C 15 Aug 2024 17:14:57.064 * RDB: 0 MB of memory used by copy-on-write
+11718:M 15 Aug 2024 17:14:57.161 * Background saving terminated with success
+11718:M 16 Aug 2024 08:49:55.880 * 1 changes in 3600 seconds. Saving...
+11718:M 16 Aug 2024 08:49:55.880 * Background saving started by pid 694
+694:C 16 Aug 2024 08:49:55.883 * DB saved on disk
+694:C 16 Aug 2024 08:49:55.884 * RDB: 0 MB of memory used by copy-on-write
+11718:M 16 Aug 2024 08:49:55.981 * Background saving terminated with success
+11718:M 16 Aug 2024 09:49:56.030 * 1 changes in 3600 seconds. Saving...
+11718:M 16 Aug 2024 09:49:56.031 * Background saving started by pid 3390
+3390:C 16 Aug 2024 09:49:56.034 * DB saved on disk
+3390:C 16 Aug 2024 09:49:56.034 * RDB: 0 MB of memory used by copy-on-write
+11718:M 16 Aug 2024 09:49:56.131 * Background saving terminated with success
+11718:M 16 Aug 2024 10:49:57.086 * 1 changes in 3600 seconds. Saving...
+11718:M 16 Aug 2024 10:49:57.086 * Background saving started by pid 6224
+6224:C 16 Aug 2024 10:49:57.089 * DB saved on disk
+6224:C 16 Aug 2024 10:49:57.090 * RDB: 0 MB of memory used by copy-on-write
+11718:M 16 Aug 2024 10:49:57.186 * Background saving terminated with success
+11718:M 17 Aug 2024 18:39:47.770 * 1 changes in 3600 seconds. Saving...
+11718:M 17 Aug 2024 18:39:47.771 * Background saving started by pid 29701
+29701:C 17 Aug 2024 18:39:47.774 * DB saved on disk
+29701:C 17 Aug 2024 18:39:47.775 * RDB: 0 MB of memory used by copy-on-write
+11718:M 17 Aug 2024 18:39:47.871 * Background saving terminated with success
+11718:M 17 Aug 2024 19:39:48.077 * 1 changes in 3600 seconds. Saving...
+11718:M 17 Aug 2024 19:39:48.078 * Background saving started by pid 892
+892:C 17 Aug 2024 19:39:48.081 * DB saved on disk
+892:C 17 Aug 2024 19:39:48.081 * RDB: 0 MB of memory used by copy-on-write
+11718:M 17 Aug 2024 19:39:48.178 * Background saving terminated with success
+11718:M 17 Aug 2024 23:13:32.771 * 1 changes in 3600 seconds. Saving...
+11718:M 17 Aug 2024 23:13:32.772 * Background saving started by pid 13652
+13652:C 17 Aug 2024 23:13:32.775 * DB saved on disk
+13652:C 17 Aug 2024 23:13:32.775 * RDB: 0 MB of memory used by copy-on-write
+11718:M 17 Aug 2024 23:13:32.872 * Background saving terminated with success
+11718:M 18 Aug 2024 00:13:33.083 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 00:13:33.083 * Background saving started by pid 17228
+17228:C 18 Aug 2024 00:13:33.086 * DB saved on disk
+17228:C 18 Aug 2024 00:13:33.087 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 00:13:33.184 * Background saving terminated with success
+11718:M 18 Aug 2024 11:15:38.950 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 11:15:38.951 * Background saving started by pid 27423
+27423:C 18 Aug 2024 11:15:38.954 * DB saved on disk
+27423:C 18 Aug 2024 11:15:38.954 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 11:15:39.051 * Background saving terminated with success
+11718:M 18 Aug 2024 12:15:40.002 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 12:15:40.002 * Background saving started by pid 1064
+1064:C 18 Aug 2024 12:15:40.005 * DB saved on disk
+1064:C 18 Aug 2024 12:15:40.006 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 12:15:40.103 * Background saving terminated with success
+11718:M 18 Aug 2024 16:04:20.435 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 16:04:20.435 * Background saving started by pid 14697
+14697:C 18 Aug 2024 16:04:20.439 * DB saved on disk
+14697:C 18 Aug 2024 16:04:20.439 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 16:04:20.536 * Background saving terminated with success
+11718:M 18 Aug 2024 17:04:21.074 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 17:04:21.075 * Background saving started by pid 18293
+18293:C 18 Aug 2024 17:04:21.078 * DB saved on disk
+18293:C 18 Aug 2024 17:04:21.078 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 17:04:21.175 * Background saving terminated with success
+11718:M 18 Aug 2024 18:15:34.613 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 18:15:34.614 * Background saving started by pid 22524
+22524:C 18 Aug 2024 18:15:34.617 * DB saved on disk
+22524:C 18 Aug 2024 18:15:34.617 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 18:15:34.714 * Background saving terminated with success
+11718:M 18 Aug 2024 19:15:35.040 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 19:15:35.041 * Background saving started by pid 26108
+26108:C 18 Aug 2024 19:15:35.044 * DB saved on disk
+26108:C 18 Aug 2024 19:15:35.044 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 19:15:35.141 * Background saving terminated with success
+11718:M 18 Aug 2024 20:15:36.042 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 20:15:36.043 * Background saving started by pid 29918
+29918:C 18 Aug 2024 20:15:36.046 * DB saved on disk
+29918:C 18 Aug 2024 20:15:36.046 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 20:15:36.143 * Background saving terminated with success
+11718:M 18 Aug 2024 21:15:37.004 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 21:15:37.005 * Background saving started by pid 1664
+1664:C 18 Aug 2024 21:15:37.008 * DB saved on disk
+1664:C 18 Aug 2024 21:15:37.008 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 21:15:37.105 * Background saving terminated with success
+11718:M 18 Aug 2024 23:03:43.246 * 1 changes in 3600 seconds. Saving...
+11718:M 18 Aug 2024 23:03:43.247 * Background saving started by pid 8096
+8096:C 18 Aug 2024 23:03:43.250 * DB saved on disk
+8096:C 18 Aug 2024 23:03:43.250 * RDB: 0 MB of memory used by copy-on-write
+11718:M 18 Aug 2024 23:03:43.347 * Background saving terminated with success
+11718:M 19 Aug 2024 00:03:44.019 * 1 changes in 3600 seconds. Saving...
+11718:M 19 Aug 2024 00:03:44.019 * Background saving started by pid 11660
+11660:C 19 Aug 2024 00:03:44.022 * DB saved on disk
+11660:C 19 Aug 2024 00:03:44.023 * RDB: 0 MB of memory used by copy-on-write
+11718:M 19 Aug 2024 00:03:44.120 * Background saving terminated with success
+11718:M 19 Aug 2024 08:34:17.652 * 1 changes in 3600 seconds. Saving...
+11718:M 19 Aug 2024 08:34:17.652 * Background saving started by pid 10049
+10049:C 19 Aug 2024 08:34:17.657 * DB saved on disk
+10049:C 19 Aug 2024 08:34:17.657 * RDB: 0 MB of memory used by copy-on-write
+11718:M 19 Aug 2024 08:34:17.753 * Background saving terminated with success
+11718:M 19 Aug 2024 09:34:18.085 * 1 changes in 3600 seconds. Saving...
+11718:M 19 Aug 2024 09:34:18.085 * Background saving started by pid 13608
+13608:C 19 Aug 2024 09:34:18.088 * DB saved on disk
+13608:C 19 Aug 2024 09:34:18.088 * RDB: 0 MB of memory used by copy-on-write
+11718:M 19 Aug 2024 09:34:18.185 * Background saving terminated with success
+11718:M 19 Aug 2024 16:54:19.810 * 1 changes in 3600 seconds. Saving...
+11718:M 19 Aug 2024 16:54:19.811 * Background saving started by pid 7821
+7821:C 19 Aug 2024 16:54:19.814 * DB saved on disk
+7821:C 19 Aug 2024 16:54:19.814 * RDB: 0 MB of memory used by copy-on-write
+11718:M 19 Aug 2024 16:54:19.911 * Background saving terminated with success
+11718:M 19 Aug 2024 17:54:20.031 * 1 changes in 3600 seconds. Saving...
+11718:M 19 Aug 2024 17:54:20.032 * Background saving started by pid 11578
+11578:C 19 Aug 2024 17:54:20.035 * DB saved on disk
+11578:C 19 Aug 2024 17:54:20.035 * RDB: 0 MB of memory used by copy-on-write
+11718:M 19 Aug 2024 17:54:20.132 * Background saving terminated with success
+11718:M 19 Aug 2024 18:54:21.098 * 1 changes in 3600 seconds. Saving...
+11718:M 19 Aug 2024 18:54:21.099 * Background saving started by pid 15279
+15279:C 19 Aug 2024 18:54:21.102 * DB saved on disk
+15279:C 19 Aug 2024 18:54:21.102 * RDB: 0 MB of memory used by copy-on-write
+11718:M 19 Aug 2024 18:54:21.199 * Background saving terminated with success
+11718:signal-handler (1724114065) Received SIGTERM scheduling shutdown...
+11718:M 20 Aug 2024 08:34:25.135 # User requested shutdown...
+11718:M 20 Aug 2024 08:34:25.135 * Saving the final RDB snapshot before exiting.
+11718:M 20 Aug 2024 08:34:25.138 * DB saved on disk
+11718:M 20 Aug 2024 08:34:25.138 * Removing the pid file.
+11718:M 20 Aug 2024 08:34:25.138 # Redis is now ready to exit, bye bye...

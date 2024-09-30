@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  gateway:
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    container_name: gateway
+    ports:
+      - "63010:63010"
+    networks:
+      - TeachMall
+    restart: always  
+  checkcode:
+    build:
+      context: ./checkcode-service
+      dockerfile: Dockerfile
+    container_name: checkcode
+    ports:
+      - "63075:63075"
+    networks:
+      - TeachMall
+    restart: always  
+    depends_on: 
+      - content
+  content:
+    build:
+      context: ./content-service
+      dockerfile: Dockerfile
+    container_name: content
+    ports:
+      - "63040:63040"
+    networks:
+      - TeachMall
+    restart: always  
+    depends_on: 
+      - gateway
+  # auth:
+  #   build:
+  #     context: ./auth-service
+  #     dockerfile: Dockerfile
+  #   container_name: auth
+  #   ports:
+  #     - "63070:63070"
+  #   networks:
+  #     - TeachMall
+  #   restart: always  
+  #   depends_on: 
+  #     - checkcode
+  # system:
+  #   build:
+  #     context: ./system-service
+  #     dockerfile: Dockerfile
+  #   container_name: system
+  #   ports:
+  #     - "63110:63110"
+  #   networks:
+  #     - TeachMall
+  #   restart: always  
+  #   depends_on: 
+  #     - gateway
+networks:
+  TeachMall:
+    external: true

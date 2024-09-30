@@ -1,0 +1,98 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_ROOT_PASSWORD: 123
+    volumes:
+      - "./mysql/conf:/etc/mysql/conf.d"
+      - "./mysql/data:/var/lib/mysql"
+      - "./mysql/init:/docker-entrypoint-initdb.d"
+    networks:
+      - hm-net
+  hmall:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: hmall
+    ports:
+      - "8080:8080"
+    networks:
+      - hm-net
+    depends_on:
+      - mysql
+  nginx:
+    image: nginx
+    container_name: nginx
+    ports:
+      - "18080:18080"
+      - "18081:18081"
+    volumes:
+      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
+      - "./nginx/html:/usr/share/nginx/html"
+
+    depends_on:
+      - hmall
+    networks:
+      - hm-net
+  seata:
+    image: seataio/seata-server:1.5.2
+    container_name: seata
+    ports:
+      - "8099:8099"
+      - "7099:7099"
+    environment:
+      - SEATA_IP=8.138.159.37
+    volumes:
+      - "./seata:/seata-server/resources"
+    privileged: true
+    networks:
+      - hm-net
+    restart: always
+      
+  
+  nacos:
+    image: nacos/nacos-server:v2.1.0-slim
+    container_name: nacos
+    env_file: 
+      - "./nacos/custom.env"
+    ports: 
+      - "8848:8848"
+      - "9848:9848" 
+      - "9849:9849" 
+    restart: always
+    networks:
+      - hm-net 
+    depends_on:
+      - mysql
+  mq:
+    image: rabbitmq:3.8-management
+    container_name: mq
+    hostname: mq
+    environment:
+      RABBITMQ_DEFAULT_USER: itheima
+      RABBITMQ_DEFAULT_PASS: 123321
+    volumes:
+      - mq-plugins:/plugins
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    networks:
+      - hm-net
+    deploy:
+      restart_policy:
+        condition: on-failure
+volumes:
+  mq-plugins:
+    driver: local
+
+      
+networks:
+  hm-net:
+    name: hm-net
+    driver: bridge
